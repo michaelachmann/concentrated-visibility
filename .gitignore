@@ -1,0 +1,20 @@
+**/.ipynb_checkpoints/
+
+# Credentials & secrets
+*.env
+.env.*
+*service-account*.json
+*credentials*.json
+*.pem
+*.key
+
+# Image archives (excluded due to copyright)
+data/*.zip
+data/images/
+data/*-images/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+

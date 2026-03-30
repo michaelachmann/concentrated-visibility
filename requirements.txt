@@ -1,0 +1,40 @@
+# Requirements for Concentrated Visibility notebooks
+#
+# Stages 1-2 (face detection/recognition, GPT-4o) were developed and run in
+# Google Colab (Python 3.10, CUDA 11.8, NVIDIA T4 GPU) in 2024.
+# Stage 3-4 (evaluation, substantive analysis) can be run locally.
+#
+# Install all dependencies:
+#   pip install -r requirements.txt
+#
+# For Stages 1-2 only a GPU runtime (Colab or local CUDA) is recommended.
+
+# --- Face detection & recognition (Stages 1-2, requires GPU) ---
+deepface>=0.0.93
+retina-face>=0.0.17
+
+# --- Data wrangling & analysis (all stages) ---
+pandas==3.0.1
+numpy==1.26.4
+scipy
+
+# --- Machine learning metrics (Stage 3) ---
+scikit-learn
+krippendorff
+
+# --- GPT-4o API (Stage 2) ---
+openai==2.30.0
+backoff==2.2.1
+
+# --- Google Cloud Vision API (Stage 1, Task B) ---
+google-cloud-vision
+google-cloud-storage
+
+# --- Visualisation ---
+matplotlib==3.8.3
+seaborn
+
+# --- Utilities ---
+pillow==10.2.0
+tqdm==4.67.1
+jupyter
